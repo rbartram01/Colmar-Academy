@@ -55,16 +55,20 @@ header .mobile {
   padding: 0rem 1.5rem 0rem 1.5rem;
 }
 
-.image {
-  display: flex;
-  width: 60%;
+.banner-content img {
   height: auto;
+  width: 100%;
 }
 
-.image img {
-  height: 31rem;
-  width: 100%;
+.media {
+  width: 60%;
+  height: auto;
   margin: 2.125rem 1.5rem 2.125rem 0rem;
+}
+
+.media img {
+  height: auto;
+  width: 100%;
 }
 
 .banner-text {
@@ -81,10 +85,35 @@ header .mobile {
 
 /* Information Style*/
 
-.info-content {
+.info-section {
   display: flex;
-  align-items: center;
-  padding: 0rem 1.5rem 0rem 1.5rem;
   position: relative;
   top: 4rem; /* To offset for fixed header. */
+  padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.info-box-section {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 2rem;
+  /*border-left: solid 1px #000;*/
+}
+
+.info-box {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.info-box img{
+  width: 35%;
+  height: 12rem;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
