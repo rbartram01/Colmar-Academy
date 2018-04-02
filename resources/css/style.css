@@ -38,8 +38,10 @@ nav li {
 }
 
 header .mobile {
-  display: none;
+  display: block;
 }
+
+
 
 /* Banner Style */
 
@@ -63,10 +65,15 @@ header .mobile {
 .media {
   width: 60%;
   height: auto;
-  margin: 2.125rem 1.5rem 2.125rem 0rem;
+  padding: 2.125rem 1.5rem 2.125rem 0rem;
 }
 
 .media img {
+  height: auto;
+  width: 100%;
+}
+
+.media video {
   height: auto;
   width: 100%;
 }
@@ -75,6 +82,7 @@ header .mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-left: 1.5rem;
 }
 
@@ -100,20 +108,97 @@ header .mobile {
   /*border-left: solid 1px #000;*/
 }
 
-.info-box {
+.content-image-box {
   display: flex;
-  width: 100%;
-  height: auto;
+  padding: 1rem 2rem 1rem 1rem;
 }
-
-.info-box img{
+.content-image-box .media-container {
   width: 35%;
-  height: 12rem;
-  padding: 0rem 1rem 1rem 1rem;
 }
 
-.info-content {
+.media-container img {
+  display: block;
+  width: 100%;
+}
+
+.text-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 1rem;
+  width: 65%;
+}
+
+/* Learning Style */
+
+.learning-section {
+  display: flex;
+  position: relative;
+  top: 4rem; /* To offset for fixed header. */
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 4rem; /* To offset for fixed header. */
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.learning-box-section {
+  display: flex;
+  padding: 0rem 4.5rem 2rem 4.5rem;
+}
+
+.learning-box {
+  flex: 1;
+  margin-right: 2rem;
+  background-color: white;
+}
+
+.learning-box:last-child {
+  margin-right: 0rem;
+}
+
+/* Thesis Style */
+
+.thesis-section {
+  display: flex;
+  position: relative;
+  top: 4rem; /* To offset for fixed header. */
+  padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.thesis-box-section {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 2rem;
+  /*border-left: solid 1px #000;*/
+}
+
+/* Footer Style */
+
+footer {
+  display: flex;
+  position: relative;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+footer .content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  height: 4rem;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+footer .copyright {
+  flex: 1;
 }
