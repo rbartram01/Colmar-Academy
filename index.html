@@ -11,10 +11,11 @@
         <!-- Start of Header -->
         <header>
             <div class="content">
-                <img src="./resources/images/ic-logo.svg">
-                <a href="index.html" class="logo">COLMAR ACADEMY</a>
-
-                <nav>
+                <div class="logo">
+                    <img src="./resources/images/ic-logo.svg">
+                    <a href="index.html">COLMAR ACADEMY</a>
+                </div >
+                <nav class="desktop">
                     <ul>
                         <li><a href="#">On Campus</a></li>
                         <li><a href="#">Online</a></li>
@@ -22,25 +23,17 @@
                         <li><a href="#">Sign In</a></li>
                     </ul>
                 </nav>
-            </div>
-        </header>
 
-        <!--header class="mobile">
-            <div class="content">
-                <img src="./resources/images/ic-logo.svg">
-                <a href="index.html" class="logo">COLMAR ACADEMY</a>
-
-                <nav>
+                <nav class="mobile">
                     <ul>
+                        <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
                         <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
-                        <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
-                        <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
-                        <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+                        <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
+                        <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
                     </ul>
                 </nav>
             </div>
-        </header-->
-
+        </header>
         <!-- End of Header -->
 
         <!-- Start of Banner -->
@@ -51,12 +44,21 @@
                 </div>
 
                 <div class="banner-text">
-                    <h3>Learn something new everyday</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h1>Learn something<br>new everyday</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
 
                     <div class="button">
                         <a href="#">Start Here</a>
                     </div>
+                </div>
+            </div>
+
+            <div class="banner-text mobile">
+                <h3>Learn something new everyday</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                <div class="button">
+                    <a href="#">Start Here</a>
                 </div>
             </div>
         </div>
@@ -64,11 +66,13 @@
 
         <!-- Start of Information -->
         <div class="info-section">
-            <div class="media">
-                <img src="./resources/images/information-main.jpg" alt="Image of Man Reading">
-                <h2>It doesn't hurt to keep practicing</h2>
-                <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"</p>
-                <p>Emanuel, Sr Strategist at Hiring.com"</p>
+            <div class="info-container">
+                <div class="media">
+                    <img src="./resources/images/information-main.jpg" alt="Image of Man Reading">
+                    <h1>It doesn't hurt to keep practicing</h1>
+                    <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"</p>
+                    <span>Emanuel, Sr Strategist at Hiring.com"</span>
+                </div>
             </div>
 
             <div class="info-box-section">
@@ -78,19 +82,19 @@
                     </div>
 
                     <div class="text-content">
-                        <h4>Orientation date</h4>
+                        <h3>Orientation date</h3>
                         <p>Tue 10/11 &amp; Wed 10/12: 8am - 3pm</p>
                         <a href="#">Read more</a>
                     </div>
                 </div>
 
-                <div class="content-image-box">
+                <div class="content-image-box" id="middle">
                     <div class="media-container">
                         <img src="./resources/images/information-campus.jpg" alt="Image of Campus">
                     </div>
 
                     <div class="text-content">
-                        <h4>Our campus</h4>
+                        <h3>Our campus</h3>
                         <p>Find which campus is close by you</p>
                         <a href="#">Read more</a>
                     </div>
@@ -102,7 +106,7 @@
                     </div>
 
                     <div class="text-content">
-                        <h4>Our guest lecture</h4>
+                        <h3>Our guest lecture</h3>
                         <p>Join a keynote with Oliver Sack about music in medical treatment</p>
                         <a href="#">Read more</a>
                     </div>
@@ -112,7 +116,7 @@
         <!-- End of Information Section -->
 
         <!-- Start of Learning Section -->
-        <div class="title">
+        <div class="title" id="learning">
             <h3>Start Learning</h3>
         </div>
 
