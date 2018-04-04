@@ -126,7 +126,7 @@ header .mobile {
   padding: 0rem 1.5rem 0rem 1.5rem;
 }
 
-.banner-content-mobile {
+.banner-text-mobile {
   display: none;
 }
 
@@ -444,34 +444,8 @@ footer li a:hover {
     top: 0rem;
   }
 
-  .banner-content-mobile {
-    padding: 0rem;
-  }
-
-  .banner-content {
-    display: none;
-  }
-
-  .banner-content-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem 1.5rem 0rem 1.5rem;
-  }
-
-  .media-mobile img {
-    width: 100%;
-    padding: 0rem;
-  }
-
-  .banner-text{
-    padding: 2rem 1rem 2rem 1rem;
-    align-items: center;
-    justify-content: center;
-  }
-
   .banner-text h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .banner-text h3 {
@@ -480,6 +454,19 @@ footer li a:hover {
 
   .banner-text p {
     margin-bottom: 1rem;
+  }
+
+  .banner-text {
+    width: 100%;
+  }
+
+  .media {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .banner-content {
+    padding: 0rem;
   }
 
   .button {
@@ -520,6 +507,24 @@ footer li a:hover {
     margin-bottom: 2rem;
   }
 
+  .media-box {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .title-thesis {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 4rem;
+    padding: 2rem 0rem 2rem 0rem;
+    text-transform: uppercase;
+  }
+
+  .thesis-section {
+    padding: 0rem 0rem 1.5rem 0rem;
+  }
+
   .thesis-box-section {
     display: none;
   }
@@ -528,4 +533,7 @@ footer li a:hover {
     display: none;
   }
 
+  footer .content nav {
+    display: none;
+  }
 }
