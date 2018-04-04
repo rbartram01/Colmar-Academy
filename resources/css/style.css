@@ -17,6 +17,15 @@ h3 {
   font-size: 1.5rem;
 }
 
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
 /* Fonts*/
 
 @font-face {
@@ -49,7 +58,7 @@ header {
   position: fixed;
   z-index: 100;
   width: 100%;
-  border-bottom: solid 4px #000;
+  border-bottom: solid 2px #000;
   background-color: white;
 }
 
@@ -94,6 +103,7 @@ header .mobile {
 
 .desktop li:hover {
   background-color: #FFF;
+  color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
 }
 
@@ -106,7 +116,7 @@ header .mobile {
 .banner-bg {
   background-color: #ADADAD;
   position: relative;
-  top: 4rem; /* To offset for fixed header. */
+  top: 4rem;
 }
 
 .banner-content {
@@ -129,11 +139,6 @@ header .mobile {
 .media img {
   height: auto;
 
-}
-
-.media video {
-  height: auto;
-  width: 100%;
 }
 
 .banner-text {
@@ -262,7 +267,7 @@ header .mobile {
 }
 
 .text-content p {
-  padding: 1rem 0rem 1rem 0rem;
+  padding: 0.5rem 0rem 1.5rem 0rem;
 }
 
 .text-content a {
@@ -271,6 +276,10 @@ header .mobile {
 
 .text-content a:hover {
   color: #ADADAD;
+}
+
+#middle .text-content a:hover {
+  color: #FFF;
 }
 
 /* Learning Style */
@@ -291,6 +300,12 @@ header .mobile {
   text-transform: uppercase;
 }
 
+.course-title {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 #learning {
   background-color: #ADADAD;
 }
@@ -306,6 +321,10 @@ header .mobile {
   background-color: white;
 }
 
+.learning-box:hover {
+  box-shadow: 0 2px 4px #000;
+}
+
 .learning-box:last-child {
   margin-right: 0rem;
 }
@@ -319,12 +338,34 @@ header .mobile {
   padding: 0rem 1.5rem 0rem 1.5rem;
 }
 
+.media-box {
+  width: 62%;
+  padding: 2.125rem 1.5rem 2.125rem 0rem;
+}
+
+.media-box p {
+  margin:0.5rem 0rem 2rem 0rem;
+}
+
+.media-box h4 {
+  text-transform: uppercase;
+}
+
+.media-box video {
+  height: auto;
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.text-content h4 {
+  text-transform: uppercase;
+}
+
 .thesis-box-section {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 35%;
   padding-top: 2rem;
-  /*border-left: solid 1px #000;*/
 }
 
 /* Footer Style */
@@ -342,6 +383,7 @@ footer .content {
   align-items: center;
   padding: 0rem 1.5rem 0rem 1.5rem;
   height: 4rem;
+  border-top: solid 2px #000;
 }
 
 footer nav ul {
@@ -350,6 +392,10 @@ footer nav ul {
 
 footer .copyright {
   flex: 1;
+}
+
+footer li a:hover {
+  color: #B22;
 }
 
 /* Mobile Style */
