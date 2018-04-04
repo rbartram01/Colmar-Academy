@@ -126,6 +126,10 @@ header .mobile {
   padding: 0rem 1.5rem 0rem 1.5rem;
 }
 
+.banner-content-mobile {
+  display: none;
+}
+
 .banner-content img {
   height: auto;
   width: 100%;
@@ -138,7 +142,6 @@ header .mobile {
 
 .media img {
   height: auto;
-
 }
 
 .banner-text {
@@ -315,6 +318,7 @@ header .mobile {
   padding: 0rem 4.5rem 2rem 4.5rem;
 }
 
+
 .learning-box {
   flex: 1;
   margin-right: 2rem;
@@ -329,12 +333,16 @@ header .mobile {
   margin-right: 0rem;
 }
 
+.learning-section-mobile {
+  display: none;
+}
+
 /* Thesis Style */
 
 .thesis-section {
   display: flex;
   position: relative;
-  top: 4rem; /* To offset for fixed header. */
+  top: 4rem;
   padding: 0rem 1.5rem 0rem 1.5rem;
 }
 
@@ -366,6 +374,10 @@ header .mobile {
   flex-direction: column;
   width: 35%;
   padding-top: 2rem;
+}
+
+.thesis-mobile {
+  display: none;
 }
 
 /* Footer Style */
@@ -429,17 +441,25 @@ footer li a:hover {
   }
 
   .banner-bg {
-    background-color: red;
     top: 0rem;
   }
 
-  .banner-content {
-    display: flex;
-    align-items: center;
+  .banner-content-mobile {
     padding: 0rem;
   }
 
-  .media {
+  .banner-content {
+    display: none;
+  }
+
+  .banner-content-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+
+  .media-mobile img {
     width: 100%;
     padding: 0rem;
   }
@@ -448,6 +468,10 @@ footer li a:hover {
     padding: 2rem 1rem 2rem 1rem;
     align-items: center;
     justify-content: center;
+  }
+
+  .banner-text h1 {
+      font-size: 2rem;
   }
 
   .banner-text h3 {
@@ -460,6 +484,48 @@ footer li a:hover {
 
   .button {
     text-align: center;
+    width: 100%;
+  }
+
+  .title {
+    margin: 2rem 0rem 1rem 0rem;
+  }
+
+  .learning-section {
+    display: none;
+  }
+
+  .learning-section-mobile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 4rem;
+    background-color: #ADADAD;
+  }
+
+  .learning-section-mobile ul {
+    width: 90%;
+    text-align: center;
+  }
+
+  .learning-section-mobile li {
+    padding:1rem 1rem 1rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #FFF;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+  }
+
+  .learning-section-mobile li:last-child {
+    margin-bottom: 2rem;
+  }
+
+  .thesis-section {
+    display: none;
+  }
+
+  .thesis-mobile {
+    display: flex;
     width: 100%;
   }
 }
