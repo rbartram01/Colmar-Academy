@@ -520,12 +520,12 @@ footer li a:hover {
     margin-bottom: 2rem;
   }
 
-  .thesis-section {
+  .thesis-box-section {
     display: none;
   }
 
-  .thesis-mobile {
-    display: flex;
-    width: 100%;
+  #thesis-desktop {
+    display: none;
   }
+
 }
