@@ -164,10 +164,6 @@ header .mobile {
   margin-bottom: 2rem;
 }
 
-.banner-text-mobile {
-  display: none;
-}
-
 .mobile {
   display: none;
 }
@@ -259,6 +255,10 @@ header .mobile {
 .media-container img {
   display: block;
   width: 100%;
+}
+
+.mobile-image {
+  display: none;
 }
 
 .text-content {
@@ -457,7 +457,8 @@ footer li a:hover {
   }
 
   .banner-text {
-    width: 100%;
+    padding: 0rem 1.5rem 2rem 1.5rem;
+    max-width: 80%;
   }
 
   .media {
@@ -465,7 +466,19 @@ footer li a:hover {
     padding: 0rem;
   }
 
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
+  }
+
   .banner-content {
+    display: block;
+    justify-content: center;
+    align-items: center;
     padding: 0rem;
   }
 
@@ -476,6 +489,39 @@ footer li a:hover {
 
   .title {
     margin: 2rem 0rem 1rem 0rem;
+  }
+
+  .info-container {
+    display: none;
+  }
+
+  .info-box-section {
+    display: block;
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .content-image-box {
+    display: block;
+    padding: 0rem;
+    margin-bottom: 4rem;
+  }
+
+  .content-image-box:last-child {
+    margin-bottom: 0rem;
+  }
+
+  .content-image-box .media-container {
+    width: 100%;
+  }
+
+  .content-image-box img{
+    width: 100%;
+  }
+
+  .text-content {
+    padding: 1rem 0rem 1rem 0rem;
+    width: 90%;
   }
 
   .learning-section {
